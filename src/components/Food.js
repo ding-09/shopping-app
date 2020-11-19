@@ -3,7 +3,7 @@ import React from 'react'
 function Food() {
     return (
         <div className="food-container">
-            <h2>Food</h2>
+            <h3 className="item-title">Food</h3>
         </div>
     )
 }

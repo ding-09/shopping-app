@@ -70,9 +70,16 @@ header {
 }
 
 .order-page {
-  padding-top: 5%;
+  padding-top: 100px;
   width: 90%;
   margin: 0 auto;
   border: 1px solid red;
   height: 100vh;
 }
+
+.food-container, .drinks-container {
+  border: 1px solid blue;
+  width: 90%;
+  margin: 0 auto;
+}
+
