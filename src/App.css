@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow: hidden;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -11,15 +10,18 @@
 }
 
 header {
-  padding-left: 10%;
   background-color: #ffdf18;
   height: 70px;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .header-title {
   font-size: 22px;
   width: 150px;
-  margin-top: 20px;
+  padding-top: 20px;
+  padding-left: 10%;
 }
 
 .home-container {
@@ -27,7 +29,7 @@ header {
   background-color: #ffdf18;
   height: 100vh;
   padding-top: 15%;
-  position: relative;
+  overflow: hidden;
 }
 
 .home-container h1 {
@@ -57,14 +59,20 @@ header {
 }
 
 .home-image-container {
-    position: absolute;
-    right: 100px;
-    bottom: 120px;
+  position: fixed;
+  right: 0;
+  top: 0;
 }
 
 .home-container img {
-    margin-right: 5%;
-    width: 500px;
-    height: auto;
-    cursor: pointer;
+  width: 500px;
+  height: auto;
+}
+
+.order-page {
+  padding-top: 5%;
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid red;
+  height: 100vh;
 }
