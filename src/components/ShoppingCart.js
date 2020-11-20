@@ -3,7 +3,7 @@ import { FaShoppingCart } from 'react-icons/fa';
 
 function ShoppingCart() {
   return (
-    <div className="shopping-cart-container ">
+    <div className="shopping-cart-container">
       <button className="shopping-cart-btn">
         <span className="cart-icon">
           <FaShoppingCart />

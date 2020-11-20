@@ -70,16 +70,82 @@ header {
 }
 
 .order-page {
-  padding-top: 100px;
+  padding-top: 70px;
   width: 90%;
   margin: 0 auto;
   border: 1px solid red;
   height: 100vh;
 }
 
-.food-container, .drinks-container {
+.order-info {
+  border: 1px solid purple;
+  height: 60px;
+  position: relative;
+}
+
+.delivery-method {
+  width: 170px;
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 10px;
+  height: 100%;
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+#or {
+  width: 20px;
+  color: #808080;
+}
+
+#delivery,
+#pickup {
+  width: auto;
+  font-weight: 600;
+  color: #4d4d4d;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.bar {
+  border: 1px solid lightgreen;
+  position: absolute;
+  bottom: 10px;
+  left: 70px;
+  width: 55px;
+}
+
+.bar-animation {
+  animation-name: bar-slide;
+  animation-fill-mode: forwards;
+}
+
+.reverse-bar-animation {
+  animation-name: bar-slide;
+  animation-direction: reverse;
+  animation-fill-mode: forwards;
+}
+
+.shopping-cart-container {
+  border: 1px solid purple;
+  display: inline-block;
+}
+
+.food-container,
+.drinks-container {
   border: 1px solid blue;
   width: 90%;
   margin: 0 auto;
 }
 
+@keyframes bar-slide {
+  0% {
+    left: 70px;
+  }
+  100% {
+    width: 50px;
+    left: 150px;
+  }
+}
