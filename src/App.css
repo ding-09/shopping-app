@@ -21,7 +21,7 @@ header {
   font-size: 22px;
   width: 150px;
   padding-top: 20px;
-  padding-left: 10%;
+  padding-left: 15%;
 }
 
 .home-container {
@@ -71,33 +71,33 @@ header {
 
 .order-page {
   padding-top: 70px;
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   border: 1px solid red;
   height: 100vh;
 }
 
 .order-info {
-  border: 1px solid purple;
-  height: 60px;
+  border-bottom: 1px solid rgb(239, 239, 239);
+  height: 65px;
   position: relative;
 }
 
 .delivery-method {
   width: 170px;
-  display: inline-block;
   margin-left: 70px;
-  padding-top: 10px;
+  padding-top: 5px;
   height: 100%;
-  padding-bottom: 5px;
   display: flex;
   align-items: center;
   font-size: 15px;
+
 }
 
 #or {
   width: 20px;
   color: #808080;
+  margin: 0 3px;
 }
 
 #delivery,
@@ -112,9 +112,9 @@ header {
 .bar {
   border: 1px solid lightgreen;
   position: absolute;
-  bottom: 10px;
+  bottom: 15px;
   left: 70px;
-  width: 55px;
+  width: 58px;
 }
 
 .bar-animation {
@@ -122,15 +122,43 @@ header {
   animation-fill-mode: forwards;
 }
 
-.reverse-bar-animation {
-  animation-name: bar-slide;
-  animation-direction: reverse;
-  animation-fill-mode: forwards;
+.shopping-cart-container {
+  position: absolute;
+  right: 20px;
+  top: 10px;
 }
 
-.shopping-cart-container {
-  border: 1px solid purple;
+.shopping-cart-btn {
+  width: 125px;
+  height: 45px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: rgb(0, 204, 153);
+  color: white;
+}
+
+.cart-icon {
   display: inline-block;
+  position: absolute;
+  right: 90px;
+  top: 13px;
+  font-size: 17px;
+}
+
+.divider {
+  display: inline-block;
+  margin-right: 30px;
+  padding-bottom: 3px;
+}
+
+.items-amount {
+  display: inline-block;
+  position: absolute;
+  right: 15px;
+  font-size: 15px;
+  top: 12px;
 }
 
 .food-container,
@@ -145,7 +173,7 @@ header {
     left: 70px;
   }
   100% {
-    width: 50px;
-    left: 150px;
+    width: 48px;
+    left: 157px;
   }
 }

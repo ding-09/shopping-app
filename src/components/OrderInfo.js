@@ -6,7 +6,7 @@ function OrderInfo() {
   return (
     <div className="order-info">
       <DeliveryMethod />
-
+      <ShoppingCart />
     </div>
   );
 }

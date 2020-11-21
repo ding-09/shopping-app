@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 
 function DeliveryMethod() {
   useEffect(() => {
@@ -7,13 +7,11 @@ function DeliveryMethod() {
     const pickup = document.getElementById('pickup');
 
     pickup.addEventListener('click', () => {
-      bar.classList.remove('reverse-bar-animation');
       bar.classList.add('bar-animation');
     });
 
     delivery.addEventListener('click', () => {
       bar.classList.remove('bar-animation');
-      bar.classList.add('reverse-bar-animation');
     });
   }, []);
 
