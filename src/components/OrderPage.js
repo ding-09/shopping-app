@@ -7,6 +7,8 @@ function OrderPage() {
   return (
     <div className="order-page">
       <OrderInfo />
+      <Food />
+      <Drinks />
     </div>
   );
 }

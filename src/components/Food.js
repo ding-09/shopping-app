@@ -1,9 +1,13 @@
 import React from 'react'
+import OrderSection from '../layout/OrderSection';
+import ItemGrid from './ItemGrid';
+
 
 function Food() {
     return (
-        <div className="food-container">
-            <h3 className="item-title">Food</h3>
+        <div className="section-container">
+            <OrderSection name="Food" />
+            <ItemGrid />
         </div>
     )
 }

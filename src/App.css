@@ -71,16 +71,16 @@ header {
 
 .order-page {
   padding-top: 70px;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   border: 1px solid red;
-  height: 100vh;
 }
 
 .order-info {
   border-bottom: 1px solid rgb(239, 239, 239);
   height: 65px;
   position: relative;
+  padding-left: 10%;
 }
 
 .delivery-method {
@@ -91,7 +91,6 @@ header {
   display: flex;
   align-items: center;
   font-size: 15px;
-
 }
 
 #or {
@@ -113,7 +112,7 @@ header {
   border: 1px solid lightgreen;
   position: absolute;
   bottom: 15px;
-  left: 70px;
+  left: 214px;
   width: 58px;
 }
 
@@ -124,7 +123,7 @@ header {
 
 .shopping-cart-container {
   position: absolute;
-  right: 20px;
+  right: 200px;
   top: 10px;
 }
 
@@ -161,19 +160,46 @@ header {
   top: 12px;
 }
 
-.food-container,
-.drinks-container {
+.section-container {
   border: 1px solid blue;
-  width: 90%;
+  width: 70%;
   margin: 0 auto;
+  margin-top: 40px;
 }
+
+.section-header {
+  border-bottom: 1px solid #a9a9a9;
+  font-size: 20px;
+  margin-bottom: 30px;
+  padding-bottom: 5px;
+}
+
+
+.item-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 150px);
+  grid-gap: 30px;
+}
+
+.item-grid > div {
+  border: 1px solid red;
+}
+
+
+
+
+
+
+
+
 
 @keyframes bar-slide {
   0% {
-    left: 70px;
+    left: 215px;
   }
   100% {
     width: 48px;
-    left: 157px;
+    left: 302px;
   }
 }
